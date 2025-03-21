@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Худякова Дарья Владимировна Список задач</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<body>
+    <header class="header">
+        <a class="header-label">Список задач</a>
+    </header>
+    <main>
+        <form class="new-task-section">
+            <label class="form-label">Новая задача</label><br>
+            <div class="new-item-element">
+                <input class="new-item-input" placeholder="Название задачи...">
+                <button class="new-item-add-button">+ Добавить</button>
+            </div>
+        </form>
+        <section class="lists-box">
+  
+            <section class="backlog-todo-list-box">
+                <label class="backlog-label">Бэклог</label>
+                <ul id="backlog">
+                    <li class="task-item-backlog" draggable="true">Выучить JS</li>
+                    <li class="task-item-backlog" draggable="true">Выучить React</li>
+                    <li class="task-item-backlog" draggable="true">Сделать домашку</li>
+                </ul>
+            </section>
+
+            <section class="inprocces-todo-list-box">
+                <label class="inprocess-label">В процессе</label>
+                <ul id="in-progress">
+                    <li class="task-item-progress" draggable="true">Выпить смузи</li>
+                    <li class="task-item-progress" draggable="true">Попить воды</li>
+                </ul>
+            </section>
+
+            <section class="ready-todo-list-box">
+                <label class="ready-label">Готово</label>
+                <ul id="done">
+                    <li class="task-item-done" draggable="true">Позвонить маме</li>
+                    <li class="task-item-done" draggable="true">Погладить кота</li>
+                </ul>   
+            </section>
+            <section class="bin-todo-list-box">
+                <label class="bin-label">Корзина</label>
+                <ul id="trash">
+                    <li class="task-item-trash" draggable="true">Сходить погулять</li>
+                    <li class="task-item-trash" draggable="true">Прочитать Войну и Мир</li>
+                </ul>
+                <button class="clear-button">x Очистить</button>
+            </section>
+        </section>
+    </main>
+</body>
+</html>
